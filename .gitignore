@@ -21,6 +21,9 @@ tags
 # Spellings
 spell/
 
+# Packer's compiled lists.
+plugin/
+
 
 
 # Compiled Lua sources

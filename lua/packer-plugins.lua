@@ -26,13 +26,19 @@ return require('packer').startup(function(use)
   use 'hrsh7th/cmp-nvim-lsp'
   use 'hrsh7th/cmp-path'
   use 'junegunn/goyo.vim'
+  use 'kyazdani42/nvim-web-devicons'
   use 'ludovicchabant/vim-gutentags'
   use 'mzlogin/vim-markdown-toc'
+  use {
+    'nvim-lualine/lualine.nvim',
+    requires = { 'kyazdani42/nvim-web-devicons', opt = true }
+  }
   use 'nvim-treesitter/nvim-treesitter'
+  use 'ryanoasis/vim-devicons'
   use 'sotte/presenting.vim'
   use 'tpope/vim-endwise'
   use 'tpope/vim-fugitive'
-  use 'vim-airline/vim-airline'
+  -- use 'vim-airline/vim-airline'
   use 'williamboman/nvim-lsp-installer'
 
   -- part of the packer initial setup.

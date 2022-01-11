@@ -62,18 +62,19 @@ vim.api.nvim_set_keymap('n', '<leader>aj', ':ALENext<cr>', {noremap = true, sile
 vim.api.nvim_set_keymap('n', '<leader>ak', ':ALEPrevious<cr>', {noremap = true, silent = true})
 -- Goyo's max width.
 vim.cmd([[let g:goyo_width = 90]])
--- Configure vim-airline
+--[[ Configure vim-airline
 vim.cmd([[
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#buffer_nr_show = 1
-]])
+--]]
+--)
 -- Remove any trailing spaces before writing a file.
 vim.api.nvim_exec([[
 autocmd BufWritePre * %s/\s\+$//e
 ]], true)
 
 require('telescope-configs')
-
 require('lsp-configs')
-
 require('nvim-cmp-configs')
+require('lualine-configs')
+require'nvim-web-devicons'.get_icons()
