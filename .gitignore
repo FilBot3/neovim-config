@@ -22,7 +22,7 @@ tags
 spell/
 
 # Packer's compiled lists.
-plugin/
+plugin/packer_compiled.lua
 
 
 
