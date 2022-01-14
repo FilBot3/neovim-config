@@ -11,4 +11,5 @@ require'lspconfig'.bashls.setup{}
 require'lspconfig'.dockerls.setup{}
 require'lspconfig'.eslint.setup{}
 require'lspconfig'.jsonls.setup{}
+require'lspconfig'.terraformls.setup{}
 require'lspconfig'.yamlls.setup{}

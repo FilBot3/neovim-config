@@ -20,6 +20,7 @@ return require('packer').startup(function(use)
   use 'neovim/nvim-lspconfig'
   use 'ajmwagar/vim-deus'
   use 'aserebryakov/vim-todo-lists'
+  use 'hashivim/vim-terraform'
   use 'hrsh7th/nvim-cmp'
   use 'hrsh7th/cmp-buffer'
   use 'hrsh7th/cmp-cmdline'
@@ -27,6 +28,7 @@ return require('packer').startup(function(use)
   use 'hrsh7th/cmp-path'
   use 'junegunn/goyo.vim'
   use 'kyazdani42/nvim-web-devicons'
+  use 'liuchengxu/graphviz.vim'
   use 'ludovicchabant/vim-gutentags'
   use 'mzlogin/vim-markdown-toc'
   use {
