@@ -23,7 +23,9 @@ RUN add-apt-repository ppa:neovim-ppa/${NEOVIM_CHANNEL} && \
       tmux \
       nodejs \
       npm \
-      yarnpkg
+      yarnpkg \
+      ripgrep \
+      fd-find
 
 RUN update-alternatives --install /usr/bin/vi vi /usr/bin/nvim 60 && \
     update-alternatives --config vi && \
