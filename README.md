@@ -40,34 +40,17 @@ git clone git@github.com/FilBot3/neovim-config \
   ~/.config/nvim
 ```
 
-### Setup packer.nvim
-
-Upon first run, if Packer for Neovim is not found, it will automatically
-bootstrap/download the plugin. Then you should be able to run
-
-```vimscript
-:PackerInstall
-```
-
-Otherwise install using the instructions listed on the GitHub Page. Which will
-download all the plugins. I exit Neovim and restart just to be safe.
-
-### Setup Neovim lsps
-
-A plugin called `williamboman/nvim-lsp-installer` will allow ther user to
-install various language servers. They have a list on their GitHub README, so
-check that out.
-
 ## Usage
 
-Now that this has all been setup. Simply execute `nvim` and all the
-configurations should be available. You'll need to install the various language
-servers still.
+With the configurations in the default location Neovim looks for, simply start
+Neovim, it will download the Neovim plugins using packer. Then source the
+`$MYVIMRC` with `:source $MYVIMRC` to install all the LSP's. This will take
+about 2-5min depending on how many you have.
 
 I think if you want to use this without technically impacting your current
 setup, you could probably clone this into a different repository and then
 specify the init.lua to load.
 
 ```bash
-nvim -S ~/.phil/init.lua
+nvim -u ~/.phil/init.lua
 ```
