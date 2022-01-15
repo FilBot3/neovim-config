@@ -34,6 +34,9 @@ Nerd Font.
 * [Nerd Fonts](https://www.nerdfonts.com)
 * ["Suace Code Pro Nerd Font"](https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/SourceCodePro.zip)
 
+Then you'll need to change your terminal font. Otherwise it won't work. This
+should work on Windows as well.
+
 ## Setup
 
 ### Clone the Neovim Config
