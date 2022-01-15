@@ -75,6 +75,7 @@ autocmd BufWritePre * %s/\s\+$//e
 
 require('telescope-configs')
 require('lsp-configs')
+require('lsp-installer-configs')
 require('nvim-cmp-configs')
 require('lualine-configs')
 require'nvim-web-devicons'.get_icons()

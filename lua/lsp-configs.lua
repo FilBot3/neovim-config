@@ -7,12 +7,13 @@ vim.o.updatetime = 250
 vim.cmd [[autocmd CursorHold,CursorHoldI * lua vim.diagnostic.open_float(nil, {focus=false})]]
 
 require'lspconfig'.ansiblels.setup{}
-require'lspconfig'.bashls.setup{}
---require'lspconfig'.bashls.setup{
---  cmd = { vim.fn.stdpath('data') .. "/lsp_servers/bash/node_modules/.bin/bash-language-server", "start" }
---}
+require'lspconfig'.bashls.setup{
+  cmd = { vim.fn.stdpath('data') .. "/lsp_servers/bash/node_modules/.bin/bash-language-server", "start" }
+}
 require'lspconfig'.dockerls.setup{}
 require'lspconfig'.eslint.setup{}
 require'lspconfig'.jsonls.setup{}
 require'lspconfig'.terraformls.setup{}
-require'lspconfig'.yamlls.setup{}
+require'lspconfig'.yamlls.setup{
+  cmd = { vim.fn.stdpath('data') .. "/lsp_servers/yaml/node_modules/.bin/yaml-language-server", "--stdio" }
+}
