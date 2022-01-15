@@ -4,6 +4,17 @@
 
 Using Neovim's Lua interface, download and manage plugins, and configure Neovim.
 
+### References
+
+* [Neovim :h lua](https://neovim.io/doc/user/lua.html)
+* [nanotee/nvim-lua-guide](https://github.com/nanotee/nvim-lua-guide)
+* [packer.nvim](https://github.com/wbthomason/packer.nvim)
+* [nvim-lspconfig](https://github.com/neovim/nvim-lspconfig)
+* [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
+* [GitHub: albingroen/quick.nvim](https://github.com/albingroen/quick.nvim)
+* [GitHub: LunarVim/LunarVim](https://github.com/LunarVim/LunarVim)
+* [SpaceVim.org](https://spacevim.org/)
+
 ## Requirements
 
 * Git SCM
@@ -17,16 +28,11 @@ For other languages, you'll need to have the various runtimes and other tools in
 your PATH so that Neovim can start them up for the language servers and other
 tools.
 
-### References
+You'll also want to setup a patched Nerd Font. I generally use Source Code Pro
+Nerd Font.
 
-* [Neovim :h lua](https://neovim.io/doc/user/lua.html)
-* [nanotee/nvim-lua-guide](https://github.com/nanotee/nvim-lua-guide)
-* [packer.nvim](https://github.com/wbthomason/packer.nvim)
-* [nvim-lspconfig](https://github.com/neovim/nvim-lspconfig)
-* [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
-* [GitHub: albingroen/quick.nvim](https://github.com/albingroen/quick.nvim)
-* [GitHub: LunarVim/LunarVim](https://github.com/LunarVim/LunarVim)
-* [SpaceVim.org](https://spacevim.org/)
+* [Nerd Fonts](https://www.nerdfonts.com)
+* ["Suace Code Pro Nerd Font"](https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/SourceCodePro.zip)
 
 ## Setup
 
