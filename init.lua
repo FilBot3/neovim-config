@@ -79,3 +79,5 @@ require('lsp-installer-configs')
 require('nvim-cmp-configs')
 require('lualine-configs')
 require'nvim-web-devicons'.get_icons()
+
+vim.api.nvim_set_keymap('n', '<Leader>cd', ':cd %:p:h<CR>:pwd<CR>', { noremap = true })
