@@ -2,7 +2,9 @@ local lsp_installer = require "nvim-lsp-installer"
 
 -- Include the servers you want to have installed by default below
 local servers = {
-  "ansiblels",
+  -- Just install this by hand. Terrible install experience and it doesn't even
+  -- run on Windows.
+  --"ansiblels",
   "bashls",
   "dockerls",
   "eslint",
