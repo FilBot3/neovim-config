@@ -2,6 +2,8 @@
 -- Requires NodeJS and npm to be available in your PATH.
 -- @see https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md
 
+local pid = vim.fn.getpid()
+
 -- Make the Diagnostics show up in a floating window.
 vim.o.updatetime = 250
 vim.cmd [[autocmd CursorHold,CursorHoldI * lua vim.diagnostic.open_float(nil, {focus=false})]]
@@ -18,6 +20,9 @@ require'lspconfig'.eslint.setup{
 }
 require'lspconfig'.jsonls.setup{
   cmd = { vim.fn.stdpath('data') .. "/lsp_servers/jsonls/node_modules/.bin/vscode-json-language-server", "start" }
+}
+require'lspconfig'.omnisharp.setup{
+  cmd = { vim.fn.stdpath('data') .. "/lsp_servers/omnisharp/omnisharp/OmniSharp", "--languageserver", "--hostPID", tostring(pid) }
 }
 require'lspconfig'.pyright.setup{
   cmd = { vim.fn.stdpath('data') .. "/lsp_servers/python/node_modules/.bin/pyright-langserver", "--stdio" }
