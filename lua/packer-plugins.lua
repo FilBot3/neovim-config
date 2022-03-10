@@ -43,6 +43,7 @@ return require('packer').startup(function(use)
     requires = { 'kyazdani42/nvim-web-devicons', opt = true }
   }
   use 'nvim-treesitter/nvim-treesitter'
+  use 'OmniSharp/omnisharp-vim'
   use 'preservim/tagbar'
   use 'ryanoasis/vim-devicons'
   use 'sotte/presenting.vim'

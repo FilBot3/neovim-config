@@ -9,6 +9,7 @@ local servers = {
   "dockerls",
   "eslint",
   "jsonls",
+  "omnisharp",
   "pyright",
   "terraformls",
   "yamlls",
