@@ -2,6 +2,9 @@
 -- Requires NodeJS and npm to be available in your PATH.
 -- @see https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md
 
+-- for Debugging
+vim.lsp.set_log_level("debug")
+
 local pid = vim.fn.getpid()
 
 -- Make the Diagnostics show up in a floating window.
@@ -13,13 +16,13 @@ require'lspconfig'.bashls.setup{
   cmd = { vim.fn.stdpath('data') .. "/lsp_servers/bash/node_modules/.bin/bash-language-server", "start" }
 }
 require'lspconfig'.dockerls.setup{
-  cmd = { vim.fn.stdpath('data') .. "/lsp_servers/dockerfile/node_modules/.bin/docker-langserver", "start" }
+  cmd = { vim.fn.stdpath('data') .. "/lsp_servers/dockerfile/node_modules/.bin/docker-langserver", "--stdio" }
 }
 require'lspconfig'.eslint.setup{
-  cmd = { vim.fn.stdpath('data') .. "/lsp_servers/vscode-eslint/node_modules/.bin/vscode-eslint-language-server", "start" }
+  cmd = { vim.fn.stdpath('data') .. "/lsp_servers/vscode-eslint/node_modules/.bin/vscode-eslint-language-server", "--stdio" }
 }
 require'lspconfig'.jsonls.setup{
-  cmd = { vim.fn.stdpath('data') .. "/lsp_servers/jsonls/node_modules/.bin/vscode-json-language-server", "start" }
+  cmd = { vim.fn.stdpath('data') .. "/lsp_servers/jsonls/node_modules/.bin/vscode-json-language-server", "--stdio" }
 }
 require'lspconfig'.omnisharp.setup{
   cmd = { vim.fn.stdpath('data') .. "/lsp_servers/omnisharp/omnisharp/OmniSharp", "--languageserver", "--hostPID", tostring(pid) }
