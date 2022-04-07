@@ -33,6 +33,9 @@ require'lspconfig'.pyright.setup{
 require'lspconfig'.terraformls.setup{
   cmd = { vim.fn.stdpath('data') .. "/lsp_servers/terraform/terraform-ls/terraform-ls", "serve" }
 }
+require'lspconfig'.tsserver.setup{
+  cmd = { vim.fn.stdpath('data') .. "/lsp_servers/tsserver/node_modules/.bin/typescript-language-server", "--stdio" }
+}
 require'lspconfig'.yamlls.setup{
   cmd = { vim.fn.stdpath('data') .. "/lsp_servers/yaml/node_modules/.bin/yaml-language-server", "--stdio" }
 }

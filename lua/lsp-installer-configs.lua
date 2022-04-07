@@ -12,6 +12,7 @@ local servers = {
   "omnisharp",
   "pyright",
   "terraformls",
+  "tsserver",
   "yamlls",
 }
 
