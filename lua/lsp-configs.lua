@@ -30,8 +30,9 @@ require'lspconfig'.omnisharp.setup{
 require'lspconfig'.pyright.setup{
   cmd = { vim.fn.stdpath('data') .. "/lsp_servers/python/node_modules/.bin/pyright-langserver", "--stdio" }
 }
+require'lspconfig'.rust_analyzer.setup{}
 require'lspconfig'.terraformls.setup{
-  cmd = { vim.fn.stdpath('data') .. "/lsp_servers/terraform/terraform-ls/terraform-ls", "serve" }
+  cmd = { vim.fn.stdpath('data') .. "/lsp_servers/terraform/terraform-ls", "serve" }
 }
 require'lspconfig'.tsserver.setup{
   cmd = { vim.fn.stdpath('data') .. "/lsp_servers/tsserver/node_modules/.bin/typescript-language-server", "--stdio" }

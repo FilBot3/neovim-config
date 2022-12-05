@@ -11,6 +11,7 @@ local servers = {
   "jsonls",
   "omnisharp",
   "pyright",
+  "rust_analyzer",
   "terraformls",
   "tsserver",
   "yamlls",

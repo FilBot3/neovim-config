@@ -46,6 +46,7 @@ return require('packer').startup(function(use)
   use 'nvim-treesitter/nvim-treesitter'
   use 'OmniSharp/omnisharp-vim'
   use 'preservim/tagbar'
+  use 'preservim/vim-markdown'
   use 'ryanoasis/vim-devicons'
   use 'sotte/presenting.vim'
   use 'towolf/vim-helm'
